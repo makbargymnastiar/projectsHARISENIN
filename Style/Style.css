@@ -1,0 +1,182 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  background-color: #fff8e6;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  background-color: white;
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: left;
+}
+
+.navbar .logo {
+  height: 40px;
+  margin-left: 70px;
+}
+
+/* Container */
+.container {
+  max-width: 450px;
+  background-color: white;
+  margin: 20px auto;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Headings */
+.heading {
+  margin-top: -29px;
+  height: 25px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #222325;
+  text-align: center;
+}
+
+.subheading {
+  margin-top: auto;
+  font-size: 12px;
+  color: #333333ad;
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+.label-login::after {
+  content: "*";
+  color: red;
+  margin-left: 0.25rem;
+}
+
+/* Inputs */
+.input {
+  width: 425px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  border-color: #ffa500;
+  outline: none;
+}
+
+/* Forgot Password */
+.forgot-password {
+  text-align: right;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.forgot-password a {
+  color: #4a505c;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.button-daftar {
+  display: block; /* Ensure it behaves like a block-level element */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove the underline */
+  width: 425px;
+  background-color: #3ecf4c;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 1rem;
+}
+
+.button-daftar:hover {
+  background-color: #34b944;
+}
+
+.button-masuk {
+  display: block; /* Ensure it behaves like a block-level element */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove the underline */
+  width: 425px;
+  background-color: #e2fcd9cc;
+  color: #3ecf4c;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 1rem;
+}
+
+.button-masuk:hover {
+  background-color: #d4f4c9;
+}
+
+/* Divider */
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 0;
+  color: #666;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid #ddd;
+}
+
+.divider:not(:empty)::before {
+  margin-right: 0.5em;
+}
+
+.divider:not(:empty)::after {
+  margin-left: 0.5em;
+}
+
+/* Google Button */
+.button-google {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-google:hover {
+  background-color: #f7f7f7;
+}
+
+.google-icon {
+  height: 20px;
+  width: 20px;
+  margin-right: 0.5rem;
+}
