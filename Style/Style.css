@@ -28,13 +28,13 @@ body {
   padding: 50px;
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding-top: 0.5rem;
 }
 
 /* Form Headings */
 .heading {
-  margin-top: -29px;
   height: 25px;
-  font-size: 25px;
+  font-size: 1.8rem;
   font-weight: bold;
   color: #222325;
   text-align: center;
@@ -42,13 +42,31 @@ body {
 
 .subheading {
   margin-top: auto;
-  font-size: 15px;
+  font-size: 1rem;
   color: #333333ad;
   text-align: center;
-  padding-bottom: 1.5rem;
+  margin-bottom: 1.8rem;
 }
 
-.label-login::after {
+/* Labels */
+.label-login {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #222325;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.label-regis {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #222325;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.label-login::after,
+.label-regis::after {
   content: "*";
   color: red;
   margin-left: 0.25rem;
@@ -56,25 +74,69 @@ body {
 
 /* Inputs */
 .input {
-  width: 425px;
+  width: 96%;
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-size: 1rem;
   transition: border-color 0.2s;
 }
 
-.input:focus {
-  border-color: #ffa500;
+/* Phone Group */
+.phone-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 1rem;
+}
+
+/* Phone Select */
+.phone-select {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 45px; /* Tinggi elemen */
+  width: 120px; /* Lebar dropdown */
+  overflow: hidden; /* Hilangkan elemen yang keluar */
+  background-color: white;
+}
+
+/* Bendera */
+.phone-select .flag {
+  height: 25px;
+  margin-left: 10px;
+}
+
+/* Dropdown Kode Negara */
+.phone-select .select-country {
+  width: 100%; /* Lebar penuh */
+  height: 100%; /* Tinggi penuh */
+  border: none;
   outline: none;
+  appearance: auto; /* Hilangkan tampilan browser */
+  padding: 1rem; /* Hindari menabrak bendera */
+  background-color: white; /* Transparan agar bendera terlihat */
+  cursor: pointer;
+}
+
+/* Input Nomor HP */
+.phone-input {
+  flex: 1; /* Isi sisa ruang */
+  height: 28px; /* Tinggi sama dengan dropdown */
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
 }
 
 /* Forgot Password */
 .forgot-password {
   text-align: right;
-  margin-top: 5px;
-  margin-right: 10px;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
 }
 
 .forgot-password a {
@@ -88,20 +150,24 @@ body {
 }
 
 /* Buttons */
-.button-daftar {
-  display: block; /* Ensure it behaves like a block-level element */
-  text-align: center; /* Center the text */
-  text-decoration: none; /* Remove the underline */
-  width: 425px;
-  background-color: #3ecf4c;
-  color: white;
-  padding: 0.5rem;
+.button-daftar,
+.button-masuk {
+  display: block;
+  text-align: center;
+  width: 95%;
+  padding: 0.75rem;
   border: none;
   border-radius: 4px;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.button-daftar {
+  background-color: #3ecf4c;
+  color: white;
   margin-bottom: 1rem;
 }
 
@@ -110,19 +176,8 @@ body {
 }
 
 .button-masuk {
-  display: block; /* Ensure it behaves like a block-level element */
-  text-align: center; /* Center the text */
-  text-decoration: none; /* Remove the underline */
-  width: 425px;
   background-color: #e2fcd9cc;
   color: #3ecf4c;
-  padding: 0.5rem;
-  border: none;
-  border-radius: 4px;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s;
   margin-bottom: 1rem;
 }
 
@@ -137,6 +192,7 @@ body {
   text-align: center;
   margin: 1rem 0;
   color: #666;
+  font-size: 0.875rem;
 }
 
 .divider::before,
@@ -146,12 +202,12 @@ body {
   border-top: 1px solid #ddd;
 }
 
-.divider:not(:empty)::before {
-  margin-right: 0.5em;
+.divider::before {
+  margin-right: 0.5rem;
 }
 
-.divider:not(:empty)::after {
-  margin-left: 0.5em;
+.divider::after {
+  margin-left: 0.5rem;
 }
 
 /* Google Button */
@@ -162,7 +218,7 @@ body {
   justify-content: center;
   background-color: white;
   border: 1px solid #ccc;
-  padding: 0.5rem;
+  padding: 0.75rem;
   border-radius: 4px;
   font-size: 1rem;
   font-weight: 500;

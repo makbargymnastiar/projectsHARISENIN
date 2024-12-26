@@ -3,7 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Style/Style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Register</title>
   </head>
-  <body></body>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <img src="../image/videobelajar.png" alt="videobelajar" class="logo" />
+    </nav>
+
+    <!-- Register Form Container -->
+    <div class="container">
+      <form action="" class="register-form">
+        <h1 class="heading">Pendaftaran Akun</h1>
+        <p class="subheading">Yuk, daftarkan akunmu sekarang juga!</p>
+
+        <!-- Nama Lengkap -->
+        <label for="fullname" class="label-regis">Nama Lengkap</label>
+        <input type="text" id="fullname" class="input" />
+
+        <!-- E-Mail -->
+        <label for="email" class="label-regis">E-Mail</label>
+        <input type="email" id="email" class="input" />
+
+        <!-- No HP -->
+        <!-- No HP -->
+        <label for="phone" class="label-regis">No. HP</label>
+        <div class="phone-group">
+          <div class="phone-select">
+            <img
+              src="../image/Indonesia.png"
+              alt="Bendera Indonesia"
+              class="flag"
+            />
+            <select id="country-code" class="select-country">
+              <option value="+62">+62</option>
+              <option value="+1">+1</option>
+              <option value="+44">+44</option>
+            </select>
+          </div>
+          <input type="text" id="phone" class="phone-input" />
+        </div>
+
+        <!-- Kata Sandi -->
+        <label for="password" class="label-regis">Kata Sandi</label>
+        <input type="password" id="password" class="input" />
+
+        <!-- Konfirmasi Kata Sandi -->
+        <label for="confirm-password" class="label-regis"
+          >Konfirmasi Kata Sandi</label
+        >
+        <input type="password" id="confirm-password" class="input" />
+
+        <!-- Tombol Daftar -->
+        <a class="button-daftar">Daftar</a>
+        <!-- Tombol Masuk -->
+
+        <a class="button-masuk" href="../login/login.html">Masuk</a>
+
+        <!-- Divider -->
+        <div class="divider">atau</div>
+
+        <!-- Tombol Google -->
+        <button type="button" class="button-google">
+          <img
+            src="../image/google.png"
+            alt="Google Icon"
+            class="google-icon"
+          />
+          Daftar dengan Google
+        </button>
+      </form>
+    </div>
+  </body>
 </html>
