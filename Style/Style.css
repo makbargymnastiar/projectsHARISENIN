@@ -3,16 +3,15 @@ body {
   margin: 0;
   font-family: "Lato", sans-serif;
   background-color: #fff8e6;
-  overflow-x: hidden;
 }
 
 /* Navbar */
 .navbar {
   background-color: white;
-  width: 100%;
+  width: auto;
   padding: 0.5rem;
   display: flex;
-  justify-content: left;
+  align-items: center;
 }
 
 .navbar .logo {
@@ -124,8 +123,8 @@ body {
 
 /* Input Nomor HP */
 .phone-input {
-  flex: 1; /* Isi sisa ruang */
-  height: 28px; /* Tinggi sama dengan dropdown */
+  flex: 1;
+  height: 28px;
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -150,6 +149,7 @@ body {
 }
 
 /* Buttons */
+.button-selengkapnya,
 .button-daftar,
 .button-masuk {
   display: block;
@@ -164,7 +164,22 @@ body {
   transition: background-color 0.3s;
   text-decoration: none;
 }
+.button-selengkapnya {
+  display: block;
+  text-align: center;
+  margin: auto;
+  width: 54%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
 
+.button-selengkapnya,
 .button-daftar {
   background-color: #3ecf4c;
   color: white;
@@ -235,4 +250,188 @@ body {
   height: 20px;
   width: 20px;
   margin-right: 0.5rem;
+}
+
+/*Beranda*/
+.kategori {
+  margin-left: 55%;
+  height: 20px;
+  font-size: 1rem;
+  text-align: center;
+  border-color: transparent;
+}
+
+.profil {
+  padding-left: 1.5rem;
+  width: 44px;
+}
+
+.parent-container {
+  display: flex; /* Aktifkan Flexbox */
+  justify-content: center; /* Rata tengah horizontal */
+  align-items: center; /* Rata tengah vertikal */
+}
+
+/* Container untuk gambar dan konten */
+.image-container {
+  align-items: center;
+  width: 1220px; /* Atur ukuran sesuai kebutuhan */
+  height: 400px;
+  margin-top: 35px;
+  overflow: hidden; /* Hindari elemen keluar */
+  border-radius: 10px; /* Opsional, jika ingin sudut membulat */
+  box-sizing: border-box;
+}
+
+/* Konten overlay di atas gambar */
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Warna teks */
+  text-align: center;
+  z-index: 1; /* Pastikan berada di atas gambar */
+}
+
+/* Judul */
+.content .h {
+  font-size: 40px;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  letter-spacing: -2px;
+}
+
+.content .p {
+  /*belum selesai atur kata */
+  font-size: 15px;
+  line-height: 1rem;
+  word-spacing: 3px;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+p1 {
+  position: relative;
+  font-size: 16px;
+  bottom: 15px;
+  margin-left: 20px;
+  margin-top: 40px;
+  color: rgba(51, 51, 51, 0.68);
+}
+
+.kelas {
+  display: flex;
+  margin-left: -20px;
+  margin-top: -10px;
+}
+
+.kelas ul {
+  list-style: none;
+}
+
+.kelas ul a {
+  text-decoration: none;
+  color: rgba(51, 51, 51, 0.68);
+}
+
+.card-conteiner {
+  display: flex;
+  justify-content: left;
+  margin-top: -14px;
+  flex-wrap: wrap; /* Pastikan kartu tidak membungkus ke bawah */
+  align-items: flex-start;
+  padding: 10px;
+  gap: 5px;
+}
+
+/* Card utama */
+.card {
+  width: 358px;
+  height: 360px; /* Perbaiki spasi ekstra pada "px" */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  padding: 15px;
+  margin: 10px;
+}
+
+/* Gambar card */
+.image-card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover; /* Menyesuaikan gambar ke dalam card */
+  display: block;
+}
+
+/* Konten card */
+.card-content {
+  padding: center;
+}
+
+.card-content h2 {
+  margin-top: 0.3rem;
+  margin-left: 2px;
+  font-size: 18px;
+}
+
+.card-content p2 {
+  display: flex;
+  margin-top: -8px;
+  margin-left: 2px;
+  font-size: 16px;
+  color: #333333ad;
+}
+
+/* Avatar dan informasi instruktur */
+.avatar-card img {
+  width: 40px;
+  height: 40px;
+  align-items: left;
+  margin-top: 15px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.mentor {
+  display: relative;
+  align-items: center;
+  padding-left: 3rem;
+  margin-top: -42px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.job-title {
+  display: flex;
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+  align-items: center;
+  margin-left: 49px;
+  margin-top: -15px;
+}
+p4 {
+  padding: 0.5rem;
+}
+.checked {
+  display: flex;
+  align-items: right;
+  margin-top: 15px;
+  color: #f4c150;
+}
+
+.price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #3ecf4c;
+  text-align: right;
+  margin-right: 10px;
+  margin-top: -20px;
 }
