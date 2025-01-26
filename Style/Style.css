@@ -620,8 +620,8 @@ footer {
 }
 
 .social-icons img {
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
 }
 
 /* Responsive */
@@ -713,19 +713,17 @@ footer {
 
   .input-group {
     flex-direction: column;
-    align-items: stretch;
-    border: none;
   }
 
   .input-group input {
-    margin-bottom: 10px;
-    border-radius: 5px;
+    margin-bottom: 20px; /* Tambahkan jarak antara input dan tombol */
+    border-radius: 5px; /* Gaya tetap rapi */
   }
 
   .input-group button {
-    width: 100%;
-    border-radius: 5px;
-    padding: 12px;
+    width: 100%; /* Tombol full-width */
+    border-radius: 5px; /* Gaya agar seragam */
+    padding: 12px; /* Tambahkan padding */
   }
   .btn-subscribe {
     padding: 8px 16px;
@@ -740,24 +738,26 @@ footer {
 
   .footer-container {
     flex-direction: column;
-    align-items: center;
     gap: 25px;
+    padding: 10px;
   }
 
   .logo-footer {
-    text-align: center;
-    padding: 20px;
+    text-align: left;
   }
 
   .footer-links {
     flex-direction: column;
-    gap: 20px;
     justify-content: center;
-    align-items: center;
+    align-items: left;
   }
 
   .footer-column h1 {
-    text-align: center;
+    text-align: left;
+  }
+
+  .footer-column ul {
+    display: none;
   }
 
   .footer-bottom {
