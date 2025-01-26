@@ -3,45 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
-    />
     <link rel="stylesheet" href="../Style/Style.css" />
     <title>Login</title>
   </head>
-  <body class="bg-custom">
-    <nav class="navbar">
-      <img src="../image/videobelajar.png" alt="Videobelajar" class="logo" />
+  <body>
+    <!-- Header -->
+    <nav>
+      <img src="../image/videobelajar.png" alt="videobelajar" />
     </nav>
 
-    <div class="container">
-      <div class="login">
-        <form action="">
-          <h1 class="heading">Masuk ke Akun</h1>
-          <h2 class="subheading">Yuk, lanjutin belajarmu di videobelajar.</h2>
+    <!-- Form Login -->
+    <div class="form-login">
+      <h1>Masuk ke Akun</h1>
+      <h2>Yuk, lanjutin belajar kamu di videobelajar</h2>
+      <form action="#" class="form">
+        <div class="input-box">
+          <label for="email" class="label-email">E-Mail</label>
+          <input type="text" id="email" class="input-email" />
 
-          <label for="email" class="label-login">E-Mail</label>
-          <input type="text" id="email" class="input" />
+          <label for="password" class="label-password">Password</label>
+          <input type="password" id="password" class="input-password" />
 
-          <label for="password" class="label-login">Password</label>
-          <input type="password" id="password" class="input" />
-
-          <p class="forgot-password">
-            <a href="#">Lupa Password?</a>
-          </p>
-
-          <a class="button-daftar" href="../register/register.html">Daftar</a>
-          <a class="button-masuk" href="../homepage/homepage.html">Masuk</a>
-
-          <div class="divider">atau</div>
-
-          <button type="button" class="button-google">
-            <img src="../image/google.png" alt="Google" class="google-icon" />
-            Masuk dengan Google
+          <a href="#" class="forgot">Lupa Password?</a>
+          <div class="btn">
+            <input type="submit" class="btn-login" value="Masuk" />
+            <input type="submit" class="btn-daftar" value="Daftar" />
+          </div>
+          <div class="middle-text">
+            <hr />
+            <p class="text">atau</p>
+          </div>
+          <button class="btn-google">
+            <img src="../image/google.png" alt="google" />
+            <p>Masuk dengan google</p>
           </button>
-        </form>
-      </div>
+        </div>
+      </form>
     </div>
   </body>
 </html>
